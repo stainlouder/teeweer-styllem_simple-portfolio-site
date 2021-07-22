@@ -554,6 +554,10 @@ textarea.input {
   line-height: 136.3636363636%;
 }
 
+.title-posts {
+  font-size: 22px;
+}
+
 .text {
   font-size: 16px;
   line-height: 143.75%;
@@ -907,6 +911,86 @@ body.ie ._ibg img {
   max-width: 100%;
 }
 
+.recent-posts {
+  background: #99e7ffcc;
+  padding: 25px 0 13px 0;
+}
+
+.recent-posts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.recent-posts__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 22px;
+  padding: 0 20px 0 0;
+}
+
+.recent-posts__view-all {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-size: 16px;
+  line-height: 23px;
+  color: #00a8cc;
+}
+
+.recent-posts__items {
+  margin: 0 -10px;
+}
+
+.recent-posts__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 10px;
+  margin: 0 0 17px 0;
+}
+
+.recent-post {
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+          box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.recent-post *:last-child {
+  margin-bottom: 0;
+}
+
+.recent-post__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 146.1538461538%;
+  color: inherit;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  margin: 0 0 17px 0;
+}
+
+.recent-post__title:hover {
+  color: #ff6464;
+}
+
+.recent-post__info {
+  font-size: 18px;
+  line-height: 144.4444444444%;
+  margin: 0 0 15px 0;
+}
+
+.recent-post__info span {
+  margin: 0 10px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -923,6 +1007,12 @@ body.ie ._ibg img {
 
   .menu__list li {
     margin: 0 33px 0 0;
+  }
+
+  .recent-posts__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -979,6 +1069,11 @@ body.ie ._ibg img {
 @media (max-width: 767.98px) {
   .title {
     font-size: 32px;
+  }
+
+  .title-posts {
+    text-align: center;
+    font-size: 18px;
   }
 
   .header__menu {
@@ -1097,6 +1192,26 @@ body.ie ._ibg img {
     -webkit-box-shadow: -5px 8px 0 0 #99e7ffcc;
             box-shadow: -5px 8px 0 0 #99e7ffcc;
     margin: 0 0 40px 0;
+  }
+
+  .recent-posts {
+    padding: 25px 0 23px 0;
+  }
+
+  .recent-posts__view-all {
+    display: none;
+  }
+
+  .recent-post {
+    padding: 15px;
+  }
+
+  .recent-post__title {
+    font-size: 22px;
+  }
+
+  .recent-post__info {
+    font-size: 16px;
   }
 
   .page {
