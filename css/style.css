@@ -598,7 +598,8 @@ textarea.input {
   font-size: 22px;
 }
 
-.text {
+.text,
+.article__text p {
   font-size: 16px;
   line-height: 143.75%;
 }
@@ -976,12 +977,17 @@ body.ie ._ibg img {
 
 .hello__avatar {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 243px;
-          flex: 0 0 243px;
-  height: 243px;
+      -ms-flex: 0 0 270px;
+          flex: 0 0 270px;
+  height: 270px;
   border-radius: 50%;
-  -webkit-box-shadow: -5px 13px 0 0 #99e7ffcc;
-          box-shadow: -5px 13px 0 0 #99e7ffcc;
+  -webkit-box-shadow: -5px 13px 0 0 #b8efff81;
+          box-shadow: -5px 13px 0 0 #b8efff81;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: -webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  -o-transition: transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  transition: transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   overflow: hidden;
 }
 
@@ -989,8 +995,14 @@ body.ie ._ibg img {
   max-width: 100%;
 }
 
+.hello__avatar:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .recent-posts {
-  background: #99e7ffcc;
+  background: #b8efff81;
   padding: 25px 0 13px 0;
 }
 
@@ -1082,7 +1094,7 @@ body.ie ._ibg img {
 }
 
 .works__item {
-  border-bottom: 1px solid #8695a4;
+  border-bottom: 1px solid #b8c3ced5;
   padding: 0 0 30px 0;
   margin: 0 0 30px 0;
 }
@@ -1148,7 +1160,7 @@ body.ie ._ibg img {
       -ms-flex-align: center;
           align-items: center;
   height: 25px;
-  background: #142850;
+  background: #142850bb;
   border-radius: 16px;
   font-weight: 900;
   font-size: 18px;
@@ -1158,7 +1170,7 @@ body.ie ._ibg img {
 
 .works__category {
   font-size: 20px;
-  color: #8695a4;
+  color: #b8c3ced5;
   margin: 0 0 0 25px;
 }
 
@@ -1187,7 +1199,7 @@ body.ie ._ibg img {
 }
 
 .blog__item {
-  border-bottom: 1px solid #8695a4;
+  border-bottom: 1px solid #b8c3ced5;
   padding: 0 0 30px 0;
   margin: 0 0 30px 0;
 }
@@ -1209,14 +1221,74 @@ body.ie ._ibg img {
 }
 
 .blog__category {
-  color: #8695a4;
+  color: #b8c3ced5;
+}
+
+.article {
+  max-width: 700px;
+  padding: 0 10px 30px;
+  margin: 0 auto;
+}
+
+.article__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 147.0588235294%;
+  margin: 0 0 30px 0;
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.article__year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  background: #ff6464;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.article__category {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 125%;
+  font-size: 20px;
+  margin: 0 0 0 25px;
+}
+
+.article__text p {
+  margin: 0 0 20px 0;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin: 0 0 20px 0;
 }
 
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 90px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 @media (min-width: 767.98px) {
@@ -1330,7 +1402,7 @@ body.ie ._ibg img {
     transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
     overflow: auto;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 70px 10px 30px 10px;
+    padding: 0px 10px 30px 10px;
   }
 
   .menu__body._active {
@@ -1425,10 +1497,10 @@ body.ie ._ibg img {
   }
 
   .hello__avatar {
-    width: 170px;
-    height: 170px;
-    -webkit-box-shadow: -5px 8px 0 0 #99e7ffcc;
-            box-shadow: -5px 8px 0 0 #99e7ffcc;
+    width: 200px;
+    height: 200px;
+    -webkit-box-shadow: -5px 8px 0 0 #b8efff81;
+            box-shadow: -5px 8px 0 0 #b8efff81;
     margin: 0 0 40px 0;
   }
 
@@ -1506,6 +1578,14 @@ body.ie ._ibg img {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 
   .page {
