@@ -5,7 +5,7 @@
 
 Build: Gulp, SASS
 
-SASS:
+CSS & SASS:
 * sections using flex elements;
 * and more;
 
@@ -14,7 +14,7 @@ It's really a very simple site.
 ## "Teeweer Styllem" простой сайт. Пример элементарного портфолио.
 [GitHub Pages](https://stainlouder.github.io/teeweer-styllem_simple-portfolio-site/)
 
-SASS:
+CSS & SASS:
 * секции с использованием flex-элементов;
 * и другое;
 
