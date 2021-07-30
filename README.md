@@ -14,6 +14,8 @@ It's really a very simple site.
 ## "Teeweer Styllem" простой сайт. Пример элементарного портфолио.
 [GitHub Pages](https://stainlouder.github.io/teeweer-styllem_simple-portfolio-site/)
 
+Build: Gulp, SASS
+
 CSS & SASS:
 * секции с использованием flex-элементов;
 * и другое;
